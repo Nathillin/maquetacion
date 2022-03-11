@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8fc6b9e61d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <title>Animalandia</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../../assets/img/logo.jpg"></a>
+            <span>
+                <a href="../dashboard.html">  <strong>  Home  </strong><i class="fa-solid fa-arrow-rotate-left"></i></a>
+            </span>
+        </div>
+
+        <div class="sesion">
+        <img src="../../assets/img/golden.jpg">
+        <span>
+            <strong>Bienvenido</strong><br>Usuario
+            <i class="fa-solid fa-rigth-from-bracket"></i>
+        </span>            
+        </div>
+    </header>
+
+    <section id="dashboard">
+        <article class="menu1">
+            <ul>
+                <li class="item1"><a href="../Usuario/usuario.html"><i class="fa-solid fa-user"></i> Usuarios</a></li>
+                <li class="item1"><a href="../Cliente/cliente.html"><i class="fa-solid fa-user-group"></i>  Clientes</a></li>
+                <li class="item1"><a href="Producto/producto.html"><i class="fa-solid fa-paw"></i>  Productos</a></li>
+                <li class="item1"><a href="../Pedido/pedido.html"><i class="fa-solid fa-cart-plus"></i>  Pedidos</a></li>
+                <li class="item1"><a href="../Reportes/reportes.html"><i class="fa-solid fa-money-check-pen"></i>  Reportes</a></li>
+            </ul>
+        </article>
+
+        <article class="contenido">
+            <form action="" method="" class="frm-producto">
+                <div class="frm-producto">
+                    <label for="descripcion" class="frm-label">Descripción</label>
+                    <input type="text" name="descripcion" id="descripcion" class="frm-label" placeholder="Ingresa la descripción">
+                </div>
+                <div class="frm-producto">
+                    <label for="nombre" class="frm-label">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="frm-label" placeholder="Ingresa el nombre del producto">
+                </div>
+                <div class="frm-producto">
+                    <label for="precio" class="frm-label">Précio</label>
+                    <input type="text" name="nombre" id="precio" class="frm-label" placeholder="Ingresa el precio del producto">
+                </div>
+                <div class="frm-producto">
+                    <label for="categoria" class="frm-label">Categoría</label>
+                    <select name="categoria" class="form-input">
+                        <c:foreash>
+                            <option value="id">Juguetes</option>
+                        </c:foreash>
+                        <c:foreash>
+                            <option value="id2">Concentrado</option>
+                        </c:foreash>
+                        <c:foreash>
+                            <option value="id3">Medicamentos</option>
+                        </c:foreash>
+                        <c:foreash>
+                            <option value="id">Accesorios</option>
+                        </c:foreash>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" name="guardar" value="Guardar" class="frm-button btn-morado">
+                </div>
+            </form>
+            
+        </article>
+
+        </section>
+</body>

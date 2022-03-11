@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8fc6b9e61d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <title>Animalandia</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../../assets/img/logo.jpg"></a>
+            <span>
+                <a href="../dashboard.html">  <strong>Home</strong><i class="fa-solid fa-arrow-rotate-left"></i></a>
+            </span>
+        </div>
+
+        <div class="sesion">
+        <img src="../../assets/img/golden.jpg">
+        <span>
+            <strong>Bienvenido</strong><br>Usuario
+            <i class="fa-solid fa-rigth-from-bracket"></i>
+        </span>            
+        </div>
+    </header>
+
+    <section id="dashboard">
+        <article class="menu1">
+            <ul>
+                <li class="item1"><a href="../Usuario/usuario.html"><i class="fa-solid fa-user"></i> Usuarios</a></li>
+                <li class="item1"><a href="../Cliente/cliente.html"><i class="fa-solid fa-user-group"></i>  Clientes</a></li>
+                <li class="item1"><a href="Producto/producto.html"><i class="fa-solid fa-paw"></i>  Productos</a></li>
+                <li class="item1"><a href="../Pedido/pedido.html"><i class="fa-solid fa-cart-plus"></i>  Pedidos</a></li>
+                <li class="item1"><a href="../Reportes/reportes.html"><i class="fa-solid fa-money-check-pen"></i>  Reportes</a></li>
+            </ul>
+        </article>
+
+        <article class="contenido">
+            <div class="producto">
+                <div class="tabla-intro">
+                    <img src="../../assets/img/golden.jpg" alt="Imagen de producto">
+                    <h1>Gestión de productos</h1>
+                    <a href="productoAdd.html" class="btn-morado">Agregar</a>
+                </div>
+
+                <form class="frm-busqueda">
+                    <input type="text" name="producto" placeholder="Ingresa el producto a consultar">
+                    <button class="btn-morado">Buscar</button>
+                </form>
+
+                <table>
+                    <tr>
+                        <th>ID Producto</th>
+                        <th>Nombre</th>
+                        <th>Características</th>
+                        <th>Precio</th>
+                        <th>Estado</th>
+                        <th colspan="2">Acciones</th>
+                    </tr>
+
+                    <tr>
+                        <td>858896</td>
+                        <td>Guacal 26cm X 28cm</td>
+                        <td>Unicolor gris </td>
+                        <td>$ 65.896</td>
+                        <td>Und</td>
+                        <td><a href="productoEditar.html"><img src="../../assets/img/modificar.png" width="30px"></a></td>
+                        <td><button class="btn-azul">Eliminar</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>858896</td>
+                        <td>Guacal 26cm X 28cm</td>
+                        <td>Unicolor gris </td>
+                        <td>$ 65.896</td>
+                        <td>Und</td>
+                        <td><a href="productoEditar.html"><img src="../../assets/img/modificar.png" width="30px"></a></td>
+                        <td><button class="btn-azul">Eliminar</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>858897</td>
+                        <td>Collar isabelino</td>
+                        <td>Transparente </td>
+                        <td>$ 5.089</td>
+                        <td>Und</td>
+                        <td><a href="productoEditar.html"><img src="../../assets/img/modificar.png" width="30px"></a></td>
+                        <td><button class="btn-azul">Eliminar</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>858898</td>
+                        <td>Concentrado Monello</td>
+                        <td> 15 Kg </td>
+                        <td>$ 215.996</td>
+                        <td>Bulto</td>
+                        <td><a href="productoEditar.html"><img src="../../assets/img/modificar.png" width="30px"></a></td>
+                        <td><button class="btn-azul">Eliminar</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>858899</td>
+                        <td>Rascado pared 76cm X 38cm</td>
+                        <td>Unicolor morado </td>
+                        <td>$ 985.896</td>
+                        <td>Und</td>
+                        <td><a href="productoEditar.html"><img src="../../assets/img/modificar.png" width="30px"></a></td>
+                        <td><button class="btn-azul">Eliminar</button></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </article>
+
+        </section>
+</body>
+</html>
