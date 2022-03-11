@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    --dark-color: #191919;
+    --white-color: #FFFFFF;
+    --purple-color: rgb(117,41,149);
+    --blue-color: #00B2B1;
+    --gray-color: #828282;
+    --ligh-color: #F3F3F3;
+}
+
+h1,h2,h3{
+    font-family: 'Lato', sans-serif;
+    color: var(--purple-color);
+}
+
+p{
+    color: var(--dark-color);
+    text-align: justify;
+}
+
+
+/*----Estilos home----*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    max-width: 270px;
+    width: 100;
+    color: var(--purple-color);
+}
+
+.b-azul{
+    /*background-color: var(--blue-color);*/
+    background: linear-gradient(#00B2B1, #016e6e);
+    border-radius: 5px;
+    border-color: var(--blue-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.b-azul:hover{
+    background: linear-gradient(#016e6e,#00B2B1);
+    transition: all 2s ease 2s;
+    /*background-color: rgba(255,0,0,0.5);*/
+}
+
+.b-morado{
+    background-color: var(--white-color);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: var(--purple-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--purple-color);
+}
+
+.b-morado:hover{
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    transition: all 1s ease 1s;
+}
+
+nav{
+    display: flex;
+    background-color: var(--purple-color);
+}
+
+.item{
+    padding: 1rem;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.item:hover{
+    color: rgba(255, 255, 255, 0.4);
+    transition: transform;
+}
+
+
+/*----Estilo Angenda----*/
+#agenda{
+    display: flex;
+    margin-top: 2px;
+}
+
+.cita{
+    flex-basis: 70%;
+    background-image: url(../img/fondo.jpg);
+    padding: 2rem;
+}
+
+.cita h1{
+    color: var(--dark-color);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.cita h3{
+    color: var(--dark-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.promocion{
+    flex-basis: 30%;
+    background-color: var(--purple-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+.promocion h1{
+    color: var(--white-color);
+    font-size: 28px;
+    text-shadow: 2px 2px 2px var(--dark-color);
+}
+
+.promocion img{
+    border-radius: 50%;
+    border: 7px solid var(--white-color);
+    inset: 0 0 0 1px var(--white-color);
+}
+
+.tseccion{
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    font-size: 32px;
+}
+
+
+/*----Estilo Equipo----*/
+#slider-equipo{
+    margin-top: 2px;
+    width: auto;
+}
+
+#equipos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tequipo{
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    font-size: 32px;
+}
+
+.equipo{
+    margin: 10px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.equipo img{
+    border-radius: 50%;
+    max-width: 200px;
+    width: 100%;
+}
+
+.equipo h2{
+    color: var(--purple-color);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px var(--dark-color);
+}
+
+.equipo h3{
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+.equipo p{
+    text-align: center;
+}
+
+/*----Estilo Servicios----*/
+#servicios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio{
+    margin: 10px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.servicio img{
+    max-width: 200px;
+    width: 100%;
+}
+
+#slider-servicios img{
+    width: 100%;
+}
+
+#services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.service{
+    display: flex;
+    padding: 20px 0 40px 10px;
+    align-items: center;
+    flex: 40%;
+}
+
+.img-service img{
+    height: 128px;
+    flex: 40%;
+    margin-right: 1em;
+}
+
+.tex-service{
+    color: var(--dark-color);
+    font-size: 16px;
+}
+
+
+/*----Estilo Tips----*/
+#slider-tips img{
+    width: 100%;
+}
+
+#tips{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.tip{
+    display: flex;
+    padding: 20px 0 40px 10px;
+    align-items: center;
+    flex: 40%;
+}
+
+.img-tip{
+    font-size: 128px;
+    display: block;
+    color: var(--blue-color);
+}
+
+.tex-tip{
+    color: var(--dark-color);
+    margin: 10px;
+    font-size: 16px;
+}
+
+
+/*----Estilo Contacto----*/
+#form-contact{
+    background-color: #e6e0e0;
+    width: 500px;
+    position: absolute;
+    top: 700px;
+    left: 70px;
+    box-shadow: 7px 13px 37px solid var(--dark-color);
+    border-radius: 10%;
+}
+
+.form-icon{
+    width: 100%;
+    background-color: var(--blue-color);
+    overflow: hidden;
+    color: var(--ligh-color);
+}
+
+.form-icon span{
+    font-size: 100px;
+    display: block;
+    margin-left: 180px;
+    text-align: center;
+}
+
+.clientcontac{
+    padding: 20px;
+    overflow: hidden;
+    color: var(--gray-color);
+}
+
+.clientcontac label, input, textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.clientcontac label{
+    font-weight: 700px;
+}
+
+.clientcontac input:not([type='submit']), textarea{
+    border: none;
+    border-bottom: 2px solid var(--blue-color);
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: var(--blue-color);
+}
+
+.clientcontac textarea{
+    min-height: 100px;
+}
+
+input[type='submit']{
+    padding: 10px;
+    border: none;
+    background-color: var(--blue-color);
+    color: var(--ligh-color);
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8%;
+}
+
+.mapa{
+    text-align: right;
+    margin-right: 50px;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.mapa p{
+    text-align: center;
+}
+foot span{
+    font-size: 0px;
+}
+
+
+/*----Estilo de Footer----*/
+footer{
+    background-image: url('../img/fondo.jpg');
+}
+
+.boxfooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgba(117,41,149, 0.4);
+}
+
+.foot{
+    text-align: center;
+}
+
+.foot h3{
+    color: var(--white-color);
+}
+
+.foot p{
+    color: var(--white-color);
+}
+
+.foot i{
+    font-size: 50px;
+    display: block;
+    color: white;
+}
+
+
+/*----Estilo Dashboard----*/
+#dash{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.sesion{
+    text-align: right;
+    color: var(--purple-color);
+    display: flex;
+    align-items: center;
+}
+
+.sesion img{
+    max-width: 60px;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--purple-color);
+}
+
+
+/*----Estilo Login----*/
+#login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-login h1{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+}
+
+.form-login i{
+    color:purple;
+    background-color: #ffffff;
+    padding: 1rem 0.8rem;
+    border-radius: 100%;
+    border: 4px solid gray;
+}
+
+.form-login{
+    margin-top:10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 1px 1px 2px var(--dark-color);
+    background-color: rgb(235, 235, 235); 
+    padding:40px;
+    border-radius: 5px;
+}
+
+.form-group {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+.form-input{
+    border: 3px solid var(--gray-color);
+    padding: 0.5rem;
+    outline: none;
+}
+
+.form-input::placeholder{
+    font-size: 0.8rem;
+}
+
+.btn-azul, .btn-morado{
+    padding: 0.5rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-azul{
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-morado{
+    background-color: purple;
+    color: black;
+    font-weight: bold;
+}
+
+.form-olvido{
+    text-align: center;
+    color: rgb(1, 177, 177);
+    font-size: 0.9rem;
+}
+
+#dashboard{
+    display: flex;
+}
+
+.menu1{
+    flex-basis: 20%;
+    background-color: var(--dark-color);
+    height: 100vh;
+}
+
+.menu1 ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu1 a{
+    color: var(--ligh-color);
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu1 a:hover{
+    background-color: var(--purple-color);
+    color: var(--dark-color);
+    border: 3px solid var(--white-color);
+    padding-left: 40px;
+    transition: all 2s;
+    width: 200px;
+}
+
+.contenido{
+    flex-basis: 80%;
+    background-color: var(--ligh-color);
+    padding: 30px;
+}
+
+.tabla-intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabla-intro img{
+    max-width: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--gray-color);
+}
+
+.tabla-intro h1{
+    color: var(--dark-color);
+    font-family: 'Roboto' sans-serif;
+}
+
+.tabla-intro a{
+    border-radius: 5%;
+}
+
+.frm-busqueda{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.frm-busqueda input[type="text"]{
+    flex-basis: 80%;
+    padding: 10px;
+    border: 2px solid var(--dark-color);
+}
+
+.frm-busqueda button{
+    flex-basis: 20%;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+table{
+    width: 100%;
+    border: 2px salid var(--dark-color);
+    border-collapse: collapse;
+}
+
+table th{
+    border: 2px solid var(--dark-color);
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    padding: 7px 0;
+}
+
+table td{
+    border: 2px solid var(--dark-color);
+    text-align: center;
+}
+
+
+/*----Estilo ProductoAdd----*/
+.form-producto{
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Roboto' sans-serif;
+}
+
+.form-producto select{
+    color: var(--dark-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.form-producto input [type="submit"]{
+    font-family: 'Roboto' sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+}
